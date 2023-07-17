@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background: #5c539d;
+        }
+        .container h2{
+            color: #fff;
+            font-size: 32px;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .price-row{
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 25px;
+        }
+        .price-col{
+            background-color: #1f283b;
+            padding: 10% 15%;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .price-col p{
+            font-size: 22px;
+        }
+        .price-col h3{
+            font-size: 44px;
+            margin: 20px 0 40px;
+            font-weight: 500;
+        }
+        .price-col h3 span{
+            font-size: 16px;
+        }
+        .container>.price-col>p,h3,span,ul,li{
+            background-color: #1f283b;
+        }
+        .price-col>ul{
+            text-align: left;
+            margin: 20px 0;
+            color: #ddd;
+            list-style-type:none;
+
+        }
+        .price-col>ul>li{
+            margin: 15px 0;
+        }
+        .price-col>ul>li::before{
+            content: '\2023';
+            color: #e33058;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .price-col>button{
+            width: 100%;
+            padding: 14px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 15px;
+            border: 1px solid #e33058;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.5s;
+        }
+        .price-col>button:hover{
+            background-color: red;
+        }
+        .price-col>p{
+            background-color: #1f283b;
+        }
+        .price-col>.price-col-h3{
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Choose Your plan</h2>
+        <div class="price-row">
+            <div class="price-col">
+                <p>School</p>
+                <h3>8$ <span>/ month</span></h3>
+                <!-- <h3 class="price-col-h3"> 16$ <span>/ year</span></h3> -->
+                <ul>
+                    <li>1 website</li>
+                    <li>10 GbB Disk Space</li>
+                    <li>Basic Web Builder</li>
+                    <li>No SSL Certificate</li>
+                    <li>Limited Support</li>
+                    <li>Free Email Address </li>
+                </ul>
+                <button>Subscribe</button>
+
+            </div>
+            <div class="price-col">
+                <p>Colleges</p>
+                <h3>16$ <span>/ month</span></h3>
+                <!-- <h3 class="price-col-h3">20$ <span>/ year</span></h3> -->
+                <ul>
+                    <li>1 website</li>
+                    <li>20 GbB Disk Space</li>
+                    <li>Basic Web Builder</li>
+                    <li>Free Ceritificate</li>
+                    <li>Free CV maker</li>
+                    <li>No Watermark</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="price-col">
+                <p>Wrok Professionals</p>
+                <h3>25$ <span>/ month</span></h3>
+                <!-- <h3 class="price-col-h3"> 50$ <span>/ year</span></h3> -->
+                <ul>
+                    <li>50 website</li>
+                    <li>100 GbB Disk Space</li>
+                    <li>Basic Web Builder</li>
+                    <li>Experience Certificate</li>
+                    <li>Free access software</li>
+                    <li>50% offer</li>
+                </ul>
+                <button>Subscribe</button>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        let Subscribe = document.querySelectorAll(".container .price-row .price-col button");
+        Subscribe.forEach(function(item) {
+            item.addEventListener('click', function() {
+              console.log("Subscribed")
+             
+              
+            });
+          });
+    
+    </script>
+</body>
+</html>

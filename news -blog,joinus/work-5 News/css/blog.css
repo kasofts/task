@@ -1,0 +1,203 @@
+/*----------------------base---------------------------------------*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+/*--------------------main--------------------------------------*/
+.navbar{
+    font-size: 2rem;
+}
+.blog{
+    display: flex;
+}
+.blog__side1{
+    flex: 1 1 30%;
+    /* background-color: lightcoral; */
+    align-self: baseline;
+    margin: 2rem;
+}
+.blog__side2{
+    flex: 1 1 50%;
+    align-self:baseline;
+    background: color #f7f7f7;
+    margin: 2rem;
+}
+.heading{
+    background-color:rgb(72, 71, 71);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.breaking-text{
+    font-size: 2rem;
+}
+.card{
+    position: relative;
+    margin-bottom: 2rem;
+    background:none;
+    border: none;
+}
+.card-body{
+    position: absolute;
+    top:80%;
+    transform: translateY(-3rem);
+}
+.card-title{
+    font-size: 3rem;
+}
+.blog__side3{
+    flex: 1 1 20%;
+
+    align-self:baseline;
+    margin: 2rem;
+}
+.trending__heading{
+    font-size: 3rem;
+}
+.trending__list{
+    list-style-type:decimal;
+}
+.trending__item{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: text-decoration 2s;
+}
+.trending__item:hover{
+    text-decoration: underline;
+}
+.trending__item:not(:last-child){
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    text-transform:capitalize;
+    padding: 1.5rem .5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    transition:.1s all ease-in-out;
+    color: black;
+    width: 30%;
+    transform: translateY(-.1rem);
+    border: none;
+}
+.btn:hover{
+    color: rgb(98, 216, 98);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.btn:active{
+    transform: translateY(.1rem);
+}
+
+@media (max-width: 75rem) {
+    .blog{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-title{
+        font-size:2rem;
+    }
+    .btn{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 56rem) {
+    .blog{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .breaking-text{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 100% !important;
+        font-size: 1.5rem !important;
+    }
+    .trending__item{
+        font-size: 1.9rem;
+    }
+
+}
+@media (max-width: 26rem) {
+    .blog{
+        display: block;
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .trending__item{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- some css style  -------------------------------------*/
+.f-1{
+    font-size: 1rem;
+}
+.f-2{
+    font-size: 2rem;
+}
+.f-3{
+    font-size: 3rem;
+}
+.f-4{
+    font-size: 4rem;
+}
+.f-5{
+    font-size: 5rem;
+}
+.f-6{
+    font-size: 6rem;
+}
+.f-7{
+    font-size: 7rem;
+}
+.f-8{
+    font-size: 8rem;
+}
+.f-9{
+    font-size: 9rem;
+}
+.bold-700{
+    font-weight: 700;
+}
+.bold-400{
+    font-weight: 400;
+}

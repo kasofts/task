@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar </title>
+
+
+<!--importing css and js file from bootstrap-->
+ <!--Link group-->
+ <link rel="stylesheet" href="../css/bootstrap.css">
+ <link rel="stylesheet" href="../css/bootstrap.bundle.js">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+     
+     .footer__link{
+      text-decoration: none;
+      font-size: 1.5rem;
+     }
+ </style>    
+  </head>
+<body>
+    <!---1 create one <nav> tag, import class -->
+    <nav class="navbar navbar-expand-md navbar-dark text-bg-dark " > 
+
+    <!--- 2 create one <div> tag add <container -fluid class> -->
+    <div class="container-fluid">
+
+        <a class="navbar-brand"href="#"> <img src="./logo1.jpeg" alt="logo" height="30px" width="30px"></a>
+        
+
+    <!---3  importing button toggle button from bootstrap-->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar" 
+        aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> 
+      
+   <!--4 Create another div tag add collapse navbar-collapse  -->
+
+   <!--rightside navbar -->
+
+   <div class="collapse navbar-collapse  " id="n_bar">
+
+
+   <!---4 Inside div tag, create navbar list, under ul tag add list item using <li> or <a href="#" tag -->
+
+    <ul class="navbar-nav ">
+
+        <li class="nav-item active"><a class="nav-link" href="../html/task2.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/about-us.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/blog.html" target="_blank">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/link.html">Links</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/membership.html">Membership</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/joinus.html">Join Us</a></li>
+    </ul>
+   <!--Kindly check all the tag is closed or not  -->
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+   </div>
+</nav>
+<div class="card-group">
+    <div class="card">
+      <img src="../img/profiles/ayush.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../img/profiles/kartik.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../img/profiles/ali.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer
+  class="text-center text-lg-start text-dark"
+  style="background-color: #ECEFF1"
+  >
+<!-- Section: Social media -->
+<section
+     class="d-flex justify-content-between p-4 text-white"
+     style="background-color: #21D192"
+     >
+<!-- Left -->
+<div class="me-5">
+<span>Get connected with us on social networks:</span>
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-twitter"></i>
+</a>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-google"></i>
+</a>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="text-white me-4 footer__link">
+  <i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold">Company name</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      Here you can use rows and columns to organize your footer
+      content. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit.
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Products</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="#!" class="text-dark">MDBootstrap</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">MDWordPress</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">BrandFlow</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">Bootstrap Angular</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Useful links</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="#!" class="text-dark">Your Account</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">Become an Affiliate</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">Shipping Rates</a>
+    </p>
+    <p>
+      <a href="#!" class="text-dark">Help</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Contact</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+    <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+    <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+    <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: rgba(0, 0, 0, 0.2)"
+ >
+© 2020 Copyright:
+<a class="text-dark" href="https://mdbootstrap.com/"
+ >MDBootstrap.com</a
+>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </body>
+</html>
+    

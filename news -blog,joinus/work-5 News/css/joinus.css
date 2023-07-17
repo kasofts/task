@@ -1,0 +1,56 @@
+/*----------------------base---------------------------------------*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+/*--------------------main--------------------------------------*/
+.navbar{
+    font-size: 2rem;
+}
+body{
+    background-image: url("../img/news.avif");
+    background-size:cover;
+}
+.content{
+    margin: 10rem auto;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 3rem;
+}
+.join-form{
+    padding: 5rem 6rem;
+}
+.input-group-text,
+.form-control,
+.form-select{
+    font-size: 2rem;
+}
+
+@media (max-width:75rem){
+    .content{
+        background-color: rgba(0,0,0,.6);
+        border-radius: 3rem;
+        width: 70% !important;
+    }
+    .join-form{
+        padding: 5rem 6rem;
+    }
+}
+@media (max-width:40rem){
+    .content{
+        background-color: rgba(0,0,0,.1);
+        border-radius: 3rem;
+        width: 100% !important;
+    }
+    .join-form{
+        padding: 5rem 6rem;
+    }
+}
